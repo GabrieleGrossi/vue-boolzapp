@@ -57,7 +57,7 @@ div.main_container div.message_section{
 .avatar_image{
     border-radius: 50%;
     height: 100%;
-    margin-right: 0.7rem;
+    margin:0 0.7rem;
 }
 .notification{
     background-color: #8edafc;
@@ -75,4 +75,31 @@ div.main_container div.message_section{
     width: 45px;
     aspect-ratio: 1;
     font-size: 1.8rem;
+}
+.search_bar{
+    background-color: #fafafa;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+}
+div.search_bar button {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #fafafa;
+}
+
+div.search_bar button i {
+    color: #b1b1b1;
+    font-size: 1.2rem;
+}
+
+div.search_bar input {
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid #fafafa;
+    font-size: 1.2rem;
 }
