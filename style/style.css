@@ -107,6 +107,10 @@ div.search_bar input {
     padding: 1rem;
     border: 1px solid #f8f8f8;
     position: relative;
+    background-color: white;
+}
+.single_user .active{
+    background-color: #b1b1b1;
 }
 .chat{
     background-image: url(../img/mine.jpg);
@@ -166,7 +170,7 @@ div.message_input input {
 }
 .user_list{
     overflow-y: scroll;
-    height: 80.7%;
+    height: 80.3%;
 }
 .text_grey{
     color: grey;
