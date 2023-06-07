@@ -3,10 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-div.upper{
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #dadbd3;
+}
+div.upper_section{
     background-color:#009688;
     height: 12%;
     width: 100%;
     position: absolute;
     top: 0;
+}
+div.main_container{
+    width: 85%;
+    height: 95%;
+    z-index: 1;
+    display: flex;
 }
