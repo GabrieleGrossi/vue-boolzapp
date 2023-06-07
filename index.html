@@ -53,6 +53,16 @@
                         </button>
                         <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
+                    <div class="single_user" v-for="contact in contacts">
+                        <div class="user_info">
+                            <img :src="contact.avatar" alt="Avatar Image" class="small_avatar">
+                            <div>
+                                <span>{{ contact.name }}</span><br>
+                                <span class="text_gray ">Ultimo messaggio inviato</span>
+                                <span>12:00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="message_section">

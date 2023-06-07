@@ -29,7 +29,6 @@ div.main_container{
 div.main_container div.user_section{
     width: 35%;
     height: 100%;
-    overflow-y: scroll;
 }
 div.main_container div.message_section{
     width: 65%;
@@ -45,6 +44,7 @@ div.main_container div.message_section{
 .user_info{
     display: flex;
     align-items: center;
+    height: 100%;
 }
 .user_icons{
     display: flex;
@@ -102,6 +102,12 @@ div.search_bar input {
     border: 1px solid #fafafa;
     font-size: 1.2rem;
 }
+.single_user{
+    height: 12%;
+    padding: 1rem;
+    border: 1px solid #f8f8f8;
+    position: relative;
+}
 .chat{
     background-image: url(../img/mine.jpg);
     height: 85%;
@@ -152,4 +158,16 @@ div.message_input input {
     border: none;
     font-size: 1.2rem;
     border-radius: 10px;
+}
+.small_avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user_list{
+    overflow-y: scroll;
+    height: 80.7%;
+}
+.text_grey{
+    color: grey;
 }
