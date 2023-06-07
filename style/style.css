@@ -41,7 +41,7 @@ div.main_container div.message_section{
     justify-content: space-between;
     background-color: #eaeaea;
     border: 1px solid #d6d6d6;
-    height: 8%;
+    height: 9%;
 }
 .user_info{
     display: flex;
@@ -58,4 +58,21 @@ div.main_container div.message_section{
     border-radius: 50%;
     height: 100%;
     margin-right: 0.7rem;
+}
+.notification{
+    background-color: #8edafc;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+.fa-bell-slash {
+    color: #8edafc;
+    background-color: #f2fbff;
+    padding: 0.3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    width: 45px;
+    aspect-ratio: 1;
+    font-size: 1.8rem;
 }
