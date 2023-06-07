@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--My style-->
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="./style/style.css">
         <!-- Font Awesome 6.4.0 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <!--Google Font-->
@@ -16,7 +16,7 @@
 </head>
 <body>
     <!--JS VUE-->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app">
         <div class="upper_section">
@@ -24,13 +24,18 @@
         <div class="main_container">
             <div class="user_section">
                 <div class="my_user">
-                    <img src="/img/avatar_1.jpg" alt="avatar image" class="avtar_image">
-                    <span>Gabriele</span>
+                    <div class="user_info">
+                        <img src="./img/avatar_1.jpg" alt="avatar image" class="avatar_image">
+                        <span>Gabriele</span>
+                    </div>
+                    <div class="user_icons">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </div>
-                <div class="user_icons">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <i class="fa-solid fa-message"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div>
+                    <i class="fa-solid fa-bell-slash"></i>
                 </div>
             </div>
             <div class="message_section">
@@ -39,6 +44,6 @@
         </div>
     </div>
 
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
