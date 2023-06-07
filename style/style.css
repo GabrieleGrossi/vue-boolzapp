@@ -103,3 +103,46 @@ div.search_bar input {
     border: 1px solid #fafafa;
     font-size: 1.2rem;
 }
+.chat{
+    background-image: url(../img/mine.jpg);
+    height: 85%;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.message{
+    width: 40%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.sent{
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+.received{
+    background-color: white;
+}
+.message_input{
+    background-color: #f3eeea;
+    border: 1px solid #d6d6d6;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+div.message_input i {
+    color: #6b7376;
+    font-size: 1.7rem;
+    width: 10%;
+    text-align: center;
+}
+div.message_input input {
+    width: 90%;
+    height: 75%;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
