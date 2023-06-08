@@ -84,8 +84,6 @@ div.main_container div.message_section{
 
 }
 div.search_bar button {
-    width: 15%;
-    height: 57px;
     background-color: white;
     border: 1px solid #fafafa;
 }
@@ -174,7 +172,7 @@ div.message_input input {
 }
 .user_list{
     overflow-y: scroll;
-    height: 80.3%;
+    height: 80.7%;
 }
 .text_grey{
     color: grey;
