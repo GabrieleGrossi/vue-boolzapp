@@ -112,6 +112,10 @@ div.search_bar input {
 .single_user .active{
     background-color: #b1b1b1;
 }
+.single_user:hover{
+    background-color: #b1b1b1;
+}
+
 .chat{
     background-image: url(../img/mine.jpg);
     height: 85%;
