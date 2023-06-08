@@ -181,13 +181,13 @@ createApp({
             ],
         }
     ],
-    activeUser:0,
+    activeUser : 0,
     newMessage:'',
   };
   },
   methods: {
     activeIndexUpdate(index) {
-        this.activeIndex = index
+        this.activeUser = index
     },
     sendNewMessage() {
         if ((this.newMessage !== '') && (this.newMessage.trim().length !== 0)) {
