@@ -194,8 +194,12 @@ createApp({
             newMessageAdd = { date: this.currentDateWithFormat(), message: this.newMessage, status: 'sent' };
             this.contacts[this.activeIndex].messages.push(newMessageAdd);
             this.newMessage = ''
-            newMessageReceived = setTimeout(() => this.newMessageReceived(), 1000);
+            messageReceived = setTimeout(() => this.messageReceived(), 1000);
         }
+    },
+    messageReceived() {
+        messageReceivedAdd = { date: this.currentDateWithFormat(), message: 'Ok!', status: 'received' };
+        this.contacts[this.activeIndex].messages.push(messageReceivedAdd);
     },
   }
 }).mount('#app');
