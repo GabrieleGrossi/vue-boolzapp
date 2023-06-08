@@ -34,7 +34,8 @@ div.main_container div.message_section{
     width: 65%;
     height: 100%;
 }
-.my_user{
+.my_user,
+.selected_user{
     display: flex;
     justify-content: space-between;
     background-color: #eaeaea;
