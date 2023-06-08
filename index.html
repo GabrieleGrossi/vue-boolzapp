@@ -86,18 +86,13 @@
                     </div>
                 </div>
                 <div class="chat">
-                    <div class="message sent">
-                        <p>Hai fatto la spesa?</p>
+                    <div class="message" v-for="(message, index) in contacts[activeUser].messages" :class="{ 'sent' : message.status === 'sent', 'received' : message.status === 'received' }">
+                        <p>
+                            {{message.message}}
+                        </p>
                         <span>12:00</span>
                     </div>
-                    <div class="message sent">
-                        <p>Hai comprato il pane ed il latte?</p>
-                        <span>12:00</span>
-                    </div>
-                    <div class="message received">
-                        <p>Ho comprato tutto!</p>
-                        <span>12:00</span>
-                    </div>
+                    
                 </div>
                 <div class="message_input">
                     <i class="fa-regular fa-face-smile"></i>
