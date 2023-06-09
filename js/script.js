@@ -191,12 +191,12 @@ createApp({
         this.activeUser = index;
     },
     searchUser() {        
-        this.contacts.forEach((index) => {            
-            if (index.name.toLowerCase().includes(this.userToSearch.toLowerCase())) {
-                index.visible = false;
+        this.contacts.forEach((contact) => {            
+            if (contact.name.toLowerCase().includes(this.userToSearch.toLowerCase())) {
+                contact.visible = true;
             }
             else {
-                index.visible = true;
+                contact.visible = false;
             }
         })
     },
