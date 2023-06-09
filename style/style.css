@@ -124,7 +124,7 @@ div.search_bar input {
     overflow-y: scroll;
 }
 .message{
-    width: 40%;
+    max-width: 40%;
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 1rem;

@@ -191,14 +191,14 @@ createApp({
     },
     sendNewMessage() {
         if ((this.newMessage !== '') && (this.newMessage.length !== 0)) {
-            newMessageAdd = { date: this.currentDateWithFormat(), message: this.newMessage, status: 'sent' };
-            this.contacts[this.activeIndex].messages.push(newMessageAdd);
+            newMessageAdd = {message: this.newMessage, status: 'sent' };
+            this.contacts[this.activeUser].messages.push(newMessageAdd);
             this.newMessage = ''
         }
     },
     messageReceived() {
-        messageReceivedAdd = { date: this.currentDateWithFormat(), message: 'Ok!', status: 'received' };
-        this.contacts[this.activeIndex].messages.push(messageReceivedAdd);
+        messageReceivedAdd = { message: 'Ok!', status: 'received' };
+        this.contacts[this.activeUser].messages.push(messageReceivedAdd);
     },
   }
 }).mount('#app');
