@@ -108,10 +108,9 @@ div.search_bar input {
     position: relative;
     background-color: white;
 }
+
+.single_user:hover,
 .active{
-    background-color: #b1b1b1;
-}
-.single_user:hover{
     background-color: #e9ebeb;
 }
 
