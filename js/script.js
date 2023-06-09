@@ -194,7 +194,10 @@ createApp({
             newMessageAdd = {message: this.newMessage, status: 'sent' };
             this.contacts[this.activeUser].messages.push(newMessageAdd);
             this.newMessage = ''
-        }
+        };
+
+        setTimeout(this.messageReceived, 1000);
+        
     },
     messageReceived() {
         messageReceivedAdd = { message: 'Ok!', status: 'received' };
