@@ -190,14 +190,15 @@ createApp({
     activeIndexUpdate(index) {
         this.activeUser = index;
     },
-    searchUser(){
-        for(let i = 0; i < this.contacts.length; i++){
-            if(this.contacts[i].name.toLowerCase().includes(this.userToSearch.toLowerCase())){
-                this.contacts[i].visible = true;
-            } else{
-                this.contacts[i].visible = false;
+    searchUser() {        
+        this.contacts.forEach((index) => {            
+            if (index.name.toLowerCase().includes(this.userToSearch.toLowerCase())) {
+                index.visible = false;
             }
-        }
+            else {
+                index.visible = true;
+            }
+        })
     },
     sendNewMessage() {
         if ((this.newMessage !== '') && (this.newMessage.length !== 0)) {
