@@ -191,12 +191,15 @@ createApp({
         this.activeUser = index;
     },
     searchUser() {        
-        this.contacts.forEach((contact) => {            
+        this.contacts.forEach(contact => 
+            contact.visible = false);
+        if (this.userToSearch === '') {
+            this.contacts.forEach(contact => 
+                contact.visible = true);
+        }
+        this.contacts.forEach(contact => {
             if (contact.name.toLowerCase().includes(this.userToSearch.toLowerCase())) {
                 contact.visible = true;
-            }
-            else {
-                contact.visible = false;
             }
         })
     },
@@ -210,7 +213,7 @@ createApp({
         setTimeout(this.messageReceived, 1000);
     },
     messageReceived() {
-        messageReceivedAdd = { message: 'Ok!', status: 'received' };
+        messageReceivedAdd = { message: 'OK!', status: 'received' };
         this.contacts[this.activeUser].messages.push(messageReceivedAdd);
     },
   }
